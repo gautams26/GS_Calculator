@@ -1,0 +1,41 @@
+
+.bmi{
+    color:red;
+    text-align: center;
+}
+.container{
+    background: linear-gradient(135deg,#f9a3fb,#e9b2ef);
+    height:30%;
+    width:50%;
+    margin: 60px auto 0;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px 10px grey;
+    margin-top:20px;
+    text-align: center;
+}
+
+#age{
+    margin-right: 40px;   
+}
+.age{
+    padding-left: 100px;
+}
+
+input{
+    padding:10px;
+    border-color: greenyellow;
+    border-width: 5px;
+    font-size: 15px;
+    color:gray;
+}
+button{
+
+            position:relative;
+             border-style: solid;
+             border-radius: 10px;
+            border-color:royalblue;
+            box-shadow: 5px 5px graytext;
+            text-align: center;
+            
+}

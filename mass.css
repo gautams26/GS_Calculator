@@ -1,0 +1,25 @@
+#mass_show{
+    background-color: red;
+}
+input{
+    height:25px;
+    margin-left: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+#inputType_mass,#resultType_mass{
+    width:250px;
+    margin-left: 5px;
+    color:red;
+    text-align: center;
+    font-size: 20px;
+}
+
+#inputType_mass{
+    margin-left: 30px;
+}
+#resultType_mass{
+   margin-left: 45px;
+}
+
+

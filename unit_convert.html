@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calculator</title>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#lc").click(function(){
+$("#lc_show").slideToggle("slow");
+});
+});
+$(document).ready(function(){
+$("#temp").click(function(){
+$("#temp_show").slideToggle("slow");
+});
+});
+$(document).ready(function(){
+$("#time").click(function(){
+$("#time_show").slideToggle("slow");
+});
+});
+$(document).ready(function(){
+$("#mass").click(function(){
+$("#mass_show").slideToggle("slow");
+});
+});
+$(document).ready(function(){
+$("#volume").click(function(){
+$("#volume_show").slideToggle("slow");
+});
+});
+</script>
+<style>
+#lc, #lc_show {
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+}
+#lc_show {
+padding: 50px;
+display: none;
+}
+#temp, #temp_show {
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+}
+#temp_show {
+padding: 50px;
+display: none;
+}
+#time, #time_show {
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+}
+#time_show {
+padding: 50px;
+display: none;
+}
+
+#mass, #mass_show , #volume,#volume_show{
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+}
+#mass_show ,#volume_show{
+padding: 50px;
+display: none;
+}
+
+</style>
+</head>
+<body>
+    
+<h1 style="text-align:center;color:red">Unit Conversion</h1>
+
+<div class="container">
+  <h1 id="lc">Length Converter</h1>
+  <div id="lc_show">
+      <input type="text" placeholder="Input" id="in" ><!-- comment -->
+      <span>=</span><!-- comment -->
+      <input type="text" placeholder="Result" id="res"><br/><br/>
+      
+      <select id="inputType">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="centimeter">Centimeter</option>
+      </select>
+      <select id="resultType">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="centimeter">Centimeter</option>
+      </select>
+      <link rel="stylesheet" href="length.css">
+      <script src="length.js"></script>
+      
+  </div> 
+</div>
+<br/>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<h1 id="temp">Temperature</h1>
+
+<div id="temp_show">
+      <input type="text" placeholder="Input" id="input" ><!-- comment -->
+      <span>=</span><!-- comment -->
+      <input type="text" placeholder="Result" id="result"><br/><br/>
+      
+      <select id="inputType_temp">
+          <option value="celsius">Celsius</option>
+          <option value="farenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+      </select>
+      <select id="resultType_temp">
+          <option value="celsius">Celsius</option>
+          <option value="farenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+      </select>
+      <link rel="stylesheet" href="temperature.css">
+      <script src="temperature.js"></script>
+      
+  </div> <br/>
+
+
+<h1 id="time">Time</h1>
+<div id="time_show">
+      <input type="text" placeholder="Input" id="input1" ><!-- comment -->
+      <span>=</span><!-- comment -->
+      <input type="text" placeholder="Result" id="result1"><br/><br/>  
+      <select id="inputType_time">
+          <option value="millisecond">Millisecond</option>
+          <option value="microsecond">Microsecond</option>
+          <option value="nanosecond">Nanosecond</option>
+          <option value="picosecond">Picosecond</option><!-- comment -->
+          <option value="minute">Minute</option><!-- comment -->
+          <option value="hour">Hour</option><!-- comment -->
+          <option value="day">Day</option><!-- comment -->
+          <option value="week">Week</option>
+          <option value="month">Month</option><!-- comment -->
+          <option value="year">Year</option>       
+      </select>
+      
+      <select id="resultType_time">
+          <option value="millisecond">Millisecond</option>
+          <option value="microsecond">Microsecond</option>
+          <option value="nanosecond">Nanosecond</option>
+          <option value="picosecond">Picosecond</option><!-- comment -->
+          <option value="minute">Minute</option><!-- comment -->
+          <option value="hour">Hour</option><!-- comment -->
+          <option value="day">Day</option><!-- comment -->
+          <option value="week">Week</option>
+          <option value="month">Month</option><!-- comment -->
+          <option value="year">Year</option>   
+      </select>
+      <link rel="stylesheet" href="time.css">
+      <script src="time.js"></script>
+      
+</div> <br/><!-- comment -->
+
+
+<h1 id="mass">Mass/Weight</h1>
+
+<div id="mass_show">
+      <input type="text" placeholder="Input" id="input2" ><!-- comment -->
+      <span>=</span><!-- comment -->
+      <input type="text" placeholder="Result" id="result2"><br/><br/>
+      
+      <select id="inputType_mass">
+          <option value="kilogram">Kilogram</option>
+          <option value="gram">Gram</option>
+          <option value="milligram">MilliGram</option>
+          <option value="metricton">MetricTon</option><!-- comment -->
+          <option value="pound">Pound</option>
+      </select>
+      <select id="resultType_mass">
+           <option value="kilogram">Kilogram</option>
+          <option value="gram">Gram</option>
+          <option value="milligram">MilliGram</option>
+          <option value="metricton">MetricTon</option><!-- comment -->
+          <option value="pound">Pound</option>
+      </select>
+      <link rel="stylesheet" href="mass.css">
+      <script src="mass.js"></script>
+      
+  </div> <br/>
+
+
+<h1 id="volume">Volume</h1>
+
+<div id="volume_show">
+      <input type="text" placeholder="Input" id="input3" ><!-- comment -->
+      <span>=</span><!-- comment -->
+      <input type="text" placeholder="Result" id="result3"><br/><br/>
+      
+      <select id="inputType_volume">
+          <option value="liter">Liter</option>
+          <option value="milliliter">MilliLiter</option>
+          <option value="cubicmeter">CubicMeter</option>
+      </select>
+      <select id="resultType_volume">
+          <option value="liter">Liter</option>
+          <option value="milliliter">MilliLiter</option>
+          <option value="cubicmeter">CubicMeter</option>
+      </select>
+      <link rel="stylesheet" href="volume.css">
+      <script src="volume.js"></script>
+      
+  </div> <br/>
+  
+  
+
+</body>
+</html>

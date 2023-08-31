@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+$("#temp").click(function(){
+$("#temp_show").slideToggle("slow");
+});
+});
+$(document).ready(function(){
+$("#unit").click(function(){
+$("#unit_show").slideToggle("slow");
+});
+});
+$(document).ready(function(){
+$("#bmi").click(function(){
+$("#bmi_show").slideToggle("slow");
+});
+});
+$(document).ready(function(){
+$("#contact").click(function(){
+$("#contact_show").slideToggle("slow");
+});
+});
+        </script>
+        
+        <style>
+            #temp, #temp_show,#unit,#unit_show,#bmi,#bmi_show,#unit_show,#contact,#contact_show {
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+width:50%;
+paddin:10px;
+color:white;
+background: black;
+margin-left: 250px;
+box-shadow: 10px 10px 10px 10px #c3c3c3;
+}
+#temp_show ,#unit_show,#bmi_show,#contact_show{
+padding: 20px;
+display: none;
+width:48%;
+}
+        </style>
+        
+        
+    </head>
+    <body>
+            
+<h1 id="temp">How to use Calculator</h1>
+
+<div id="temp_show">
+    <p> Click calculator, and it will open the calculator page on the right side. Now, you can use our
+      calculator in a simple way, like other platforms</p>  
+  </div> <br/>
+  
+<h1 id="unit">How to use Unit Conversion</h1>
+
+<div id="unit_show">
+    <p> Click unit conversion. There are five different types of unit conversions available.
+      Based on your need, you can choose it and give the necessary details, and it will give the result automatically.</p>  
+  </div> <br/>
+  
+<h1 id="bmi">How to use BMI Calculator</h1>
+
+<div id="bmi_show">
+    <p>Open the BMI calculator page, give the necessary information that is required, and then click calculate.
+      You will receive output according to your BMI. It shows the result in different colors based on your BMI result.</p>  
+  </div> <br/>
+
+  
+<h1 id="contact">How to contact you</h1>
+
+<div id="contact_show">
+    <p> You have a mail option to support you on the contact page. Mail us with your doubts.</p>  
+  </div> <br/>
+  
+
+    </body>
+</html>

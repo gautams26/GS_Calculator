@@ -1,0 +1,23 @@
+#temp_show{
+    background-color: red;
+}
+input{
+    height:25px;
+    margin-left: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+#inputType_temp,#resultType_temp{
+    width:250px;
+    margin-left: 5px;
+    color:red;
+    text-align: center;
+    font-size: 20px;
+}
+
+#inputType_temp{
+    margin-left: 30px;
+}
+#resultType_temp{
+   margin-left: 45px;
+}

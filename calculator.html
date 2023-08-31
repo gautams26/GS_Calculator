@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cal.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="calculator">
+            <input type="text" placeholder="0" id="input-box"><!-- comment -->
+            <button onclick="cl()">AC</button><!-- comment -->
+            <button onclick="Del()">Del</button><!-- comment -->
+            <button onclick="display('%')">%</button><!-- comment -->
+            <button onclick="display('/')" class="div">/</button><!-- comment -->
+            <button onclick="display('1')">1</button><!-- comment -->
+            <button onclick="display('2')">2</button><!-- comment -->
+            <button onclick="display('3')">3</button><!-- comment -->
+            <button onclick="display('*')">*</button><!-- comment -->
+            <button onclick="display('4')">4</button><!-- comment -->
+            <button onclick="display('5')">5</button><!-- comment -->
+            <button onclick="display('6')">6</button><!-- comment -->
+            <button onclick="display('+')">+</button><!-- comment -->
+            <button onclick="display('7')">7</button><!-- comment -->
+            <button onclick="display('8')">8</button><!-- comment -->
+            <button onclick="display('9')">9</button><!-- comment -->
+            <button onclick="display('-')">-</button><!-- comment -->
+            <button onclick="display('.')" class="dot">.</button><!-- comment -->
+            <button onclick="display('0')">0</button><!-- comment -->
+            <button onclick="display('00')">00</button><!-- comment -->
+            <button onclick="calculate()" class="equal">=</button><!-- comment --> 
+            </div>
+        </div>
+            
+        <<script>
+            let inputValue=document.getElementById("input-box");
+            function display(number){
+                inputValue.value+=number;
+            }
+            function calculate(){
+                try{
+                inputValue.value=eval(inputValue.value);}
+            catch(err){
+                alert("Wrong Input");
+            }
+            }
+            function cl(){
+                inputValue.value="";
+            }
+            function Del(){
+                inputValue.value=inputValue.value.slice(0,-1);
+            }
+            
+        </script>
+            
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+             .cal,.convert,.bmi,.mat,.net,.about,.contact,.help{
+            display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+            position:relative;
+             border-style: solid;
+             border-radius: 10px;
+            border-color:royalblue;
+            box-shadow: 5px 10px graytext;
+             }
+             
+             .cal:hover,.convert:hover,.bmi:hover,.mat:hover,.net:hover,.about:hover,.contact:hover,.help:hover{
+                 color:whitesmoke;
+                 background-color: green;
+                 
+             }
+            
+          
+             img{
+                 height:30px;
+                 width: 30px;
+             }
+             body{
+                 background-image: linear-gradient(to left,#45f889,#ffc767,#5678f9);
+             }
+             a{
+                text-decoration: none;
+                color: black;
+             }
+             
+        </style>
+    </head>
+    <body>
+        <script src="left_side.js"></script>
+        <div class="container">
+            <a href='calculator.html' target='frame' >
+               <div class="cal" >
+                <div>
+                    <img src="calculator.png"/></div><!-- comment -->
+                    <div>
+                        <p>Calculator</p>
+                    </div>
+            </div><br/> 
+            </a>
+            <a href='unit_convert.html' target='frame'>
+            <div class="convert">
+                <div>
+                    <img src="converter.png"/></div><!-- comment -->
+                    <div>
+                        <p>Unit Conversion</p>
+                    </div>
+            </div><br/></a>
+            <a href='BMI.html' target='frame'>
+            <div class="bmi">
+                <div>
+                    <img src="BMI.png"/></div><!-- comment -->
+                    <div>
+                        <p>BMI Calculator</p>
+                    </div>
+            </div><!-- comment --><br/></a><!-- comment -->
+            <a href='matrix.html' target='frame' hidden>
+            <div class="mat">
+                <div>
+                    <img src="mat_mul.png"/></div><!-- comment -->
+                    <div>
+                        <p>Matrix multiplication Calculator</p>
+                    </div>
+            </div><!-- comment --><br/></a><!-- comment -->
+            <a href='network.html' target='frame' hidden>
+            <div class="net">
+                <div>
+                    <img src="network.png"/></div><!-- comment -->
+                    <div>
+                        <p>Network Calculator</p>
+                    </div>
+            </div><br/></a>
+            <a href='about.html' target='frame'>
+             <div class="about">
+                <div>
+                    <img src="about_us.png"/></div><!-- comment -->
+                    <div>
+                        <p>About Us</p>
+                    </div>
+             </div><!-- comment --><br/></a>
+            
+            <a href='help.html' target='frame'>
+            <div class="help">
+                <div>
+                    <img src="help.png"/></div><!-- comment -->
+                    <div>
+                        <p>Help Us</p>
+                    </div>
+            </div><!-- comment --><br/></a>
+            <a href='contact.html' target='frame'>
+            <div class="contact">
+                <div>
+                    <img src="contact.png"/></div><!-- comment -->
+                    <div>
+                        <p>Contact</p>
+                    </div>
+            </div><br/></a>
+            
+            
+          
+            
+            
+        </div>
+    </body>
+</html>

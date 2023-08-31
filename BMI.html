@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bmi.css">
+        
+    </head>
+    <body>
+        
+        <h1 class="bmi">BMI Calculator</h1>
+        <div class="container">
+                <div class="age">
+                    Age <input type="text" id="age"></div><!-- comment --><br/><br/>
+                    <div class="gender">
+                        
+                        Gender <input type="radio" id="Male" name="gender" value="male"><!-- comment -->
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="female"><!-- comment -->
+            <label for="Female">Female</label><br/><br/>
+                    </div>
+                    <div class="height">
+                        Height (cm) <input type="text" id="height"><!-- comment --><br/><br/>
+                    </div>
+                    <div class="weight">
+                        Weight (kg) <input type="text" id="weight"><br/><br/>
+                    </div>
+            
+            <button id="calculate">Calculate</button><!-- comment --><br/><br/>
+            <button id="clear" >Clear</button><!-- comment --> <br/><br/>
+            <h2 id="result" style="font-weight: 80px;"></h2>
+        </div>
+        
+        <script src="bmi.js"></script>
+    </body>
+</html>
